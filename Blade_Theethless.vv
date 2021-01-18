@@ -1,0 +1,33 @@
+BeginZE /home/philipp/Dokumente/Uni/Uni Bozen/MeVi/Projekt MeVi/Blade_Theethless.gid/Blade_Theethless.vv
+   x -1138.0467529296875 12.5519723892211914
+   y 439.750762939453125 -480.110626220703125
+   z -2615.336669921875 2615.336669921875
+   e 871.77886962890625
+   v -0.168304784353983938 -0.206070952173745409 0.0171507451502557577
+   r 0.963801906085767324
+   m 0.914481222629547119 0.0363056138157844543 -0.402996271848678589 0 0.10242529958486557 0.942758679389953613 0.317356407642364502 0 0.391450047492980957 -0.331493496894836426 0.858416497707366943 0 0 0 0 1
+   c -264.21966552734375 -33.2228889465332031 0
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 1
+   DrawingType 0
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE /home/philipp/Dokumente/Uni/Uni Bozen/MeVi/Projekt MeVi/Blade_Theethless.gid/Blade_Theethless.vv
+
