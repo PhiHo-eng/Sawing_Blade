@@ -11,7 +11,7 @@
         "model_part_name"          : "Structure",
         "domain_size"              : 3,
         "echo_level"               : 1,
-        "analysis_type"            : "non_linear",
+        "analysis_type"            : "linear",
         "model_import_settings"    : {
             "input_type"     : "mdpa",
             "input_filename" : "Blade_Theethless"

@@ -58,7 +58,7 @@ def Analysis(Omega):
         StaticParameters = km.Parameters(parameter_file.read())
     model = km.Model()                                                                  #km 
     StaticParameters["solver_settings"]["analysis_type"].SetString(StaticAnalysisType)
-    StaticParameters["processes"]["loads_process_list"][0]["Parameters"]["modulus"].SetString("(x**2+y**2)**0.5*"+str(((Omega/60)*2*np.pi)**2))
+    StaticParameters["processes"]["loads_process_list"][0]["Parameters"]["modulus"].SetString("((x**2+y**2)**0.5)*"+str(((Omega/60)*2*np.pi)**2))
     StaticParameters["processes"]["loads_process_list"][0]["Parameters"]["direction"][0].SetString("x/((x**2+y**2)**0.5)")
     StaticParameters["processes"]["loads_process_list"][0]["Parameters"]["direction"][1].SetString("y/((x**2+y**2)**0.5)")
     #StaticParameters["processes"]["loads_process_list"][0]["Parameters"]["modulus"].SetDouble(Omega)
@@ -80,7 +80,7 @@ def Analysis(Omega):
 
 #RPMi = 12.1
 RPMList = np.linspace(0, 1500, nRPM)
-RPMList = [1500] #die Belastung nur ein Mal durchführen
+#RPMList = [0] #die Belastung nur ein Mal durchführen
 fnList = []
 sigmaMax = []
 for i, RPMi in enumerate(RPMList):

@@ -20,16 +20,23 @@
         "time_stepping"            : {
             "time_step" : 1.1
         },
-        "eigensolver_settings"     : {
-            "solver_type"           : "eigen_eigensystem",
-            "max_iteration"         : 1000,
-            "tolerance"             : 1e-6,
-            "number_of_eigenvalues" : 7,
-            "echo_level"            : 1
-        },
-        "rotation_dofs"            : true,
-        "volumetric_strain_dofs"   : false
+         "eigensolver_settings":{
+        "solver_type"               : "feast",
+        "symmetric"                 : true,
+        "number_of_eigenvalues"     : 10,
+        "e_min"                     : -0.1,
+        "e_max"                     : 1e09,
+        "search_lowest_eigenvalues" : false,
+        "search_highest_eigenvalues" : false,
+        "sort_eigenvalues"          : true,
+        "sort_order"                : "sr",
+        "subspace_size"             : 100,
+        "max_iteration"             : 1000,
+        "tolerance"                 : 1e-6,
+        "echo_level"                : 2
     },
+        "rotation_dofs"            : true,
+        "volumetric_strain_dofs"   : false    },
     "processes"       : {
         "constraints_process_list" : [{
             "python_module" : "assign_vector_variable_process",
